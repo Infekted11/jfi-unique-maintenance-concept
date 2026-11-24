@@ -1,0 +1,9 @@
+# Unpublished concept. Owner publication approval is required before changing this guard.
+[build]
+  command = "echo 'Publication blocked: unpublished owner-review concept.' && exit 1"
+  publish = "public"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
